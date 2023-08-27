@@ -1,4 +1,31 @@
-/* */
+.header {
+  padding-top: 52px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 5px;
+}
+
+.logo {
+  height: 52px;
+  max-width: 284px;
+}
+
+.navigationDate {
+  font-family: "Playfair Display", serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1d1d1b;
+  text-align: center;
+  margin-top: 12px;
+  text-align: left;
+}
+
+.navigationDateNumber {
+  font-size: 20px;
+  line-height: 26.6px;
+}
+
+/*Footer */
 .footer {
   color: #fff;
   background: #1d1d1b;
@@ -128,7 +155,7 @@ img.appLogo {
   top: 0;
 }
 
-@media (min-width: 768px) and (max-width: 1274px) {
+@media (min-width: 768px) {
   .footer {
     padding: 28px 16px;
   }
@@ -168,7 +195,8 @@ img.appLogo {
   }
 
   .mobileAppDescriptionWrapper {
-    width: 133px;
+    /* width: 133px; */
+    flex-basis: calc((100% - 10px) / 2);
   }
 
   .firstLabelWrapper {
@@ -178,6 +206,7 @@ img.appLogo {
   .footerListItem {
     font-size: 14px;
     line-height: 20px;
+    flex-basis: min-content;
   }
 
   .footerListItem:not(:last-child) {
@@ -186,10 +215,54 @@ img.appLogo {
 
   .footerList {
     flex-wrap: nowrap;
-    gap: 10px;
+    /* gap: 10px; */
+    justify-content: space-between;
   }
 
   .footerCopyright {
     text-align: left;
+  }
+
+  img.appLogo {
+    min-width: 114px;
+  }
+}
+
+@media (min-width: 1275px) {
+  .footerMobileAppUnderlineWrapper {
+    max-width: 1275px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+  }
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footerUnderlineWrapper {
+    justify-content: space-between;
+  }
+
+  .newsweekMobileAppTitle {
+    width: 100%;
+  }
+
+  .mobileAppDescriptionLabel {
+    width: 226px;
+  }
+
+  .footerList {
+    max-width: 1275px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+  }
+
+  .footerCopyrightWrapper {
+    max-width: 1275px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
   }
 }
