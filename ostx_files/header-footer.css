@@ -284,7 +284,8 @@
 .footer {
   color: #fff;
   background: #1d1d1b;
-  padding: 40px 16px 32px 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* padding: 40px 16px 32px 16px; */
 }
 
 .newsweekMobileAppTitle {
@@ -410,11 +411,146 @@ img.appLogo {
   top: 0;
 }
 
-@media (min-width: 768px) {
-  .footer {
-    padding: 28px 16px;
-  }
+.footerLogo {
+  height: 35px;
+  width: 190px;
+  margin: 0 auto;
+  display: block;
+}
 
+.newsLetterBtn {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: 1px solid #1d1d1b;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: #1d1d1b;
+  background: 0 0;
+  padding: 10px 16px;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 auto;
+  margin-top: 44px;
+  margin-bottom: 28px;
+}
+
+.newsLetterBtn:hover {
+  background: #e8e8e8;
+}
+
+.footerTopPartWrapper {
+  padding-top: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 40px;
+}
+
+.footerBgWrapper {
+  background-color: #ffffff;
+  color: rgb(29, 29, 27);
+}
+
+.socialList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.socialListLink:hover svg path {
+  stroke: red;
+}
+
+.socialListLink:hover svg circle {
+  fill: red;
+}
+
+.secondSocialListLink:hover svg path {
+  fill: red;
+}
+
+.footerBorderContainer {
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.footerBorderLine {
+  border-bottom: 1px solid #61615f;
+}
+
+.footerBorderTriangle {
+  position: relative;
+}
+
+.footerBorderTriangle::before {
+  content: "";
+  width: 18px;
+  height: 16px;
+  position: absolute;
+  right: 0;
+  bottom: -16px;
+  border-left: 1px solid #61615f;
+}
+
+.footerBorderTriangle::after {
+  content: "";
+  width: 24px;
+  height: 1px;
+  position: absolute;
+  left: calc(100% - 21px);
+  bottom: -9px;
+  border-top: 1px solid #61615f;
+  transform: rotate(138deg);
+}
+
+.footerNavigationWrapper {
+  padding-top: 33px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.footerNavigationListTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 600;
+  border-bottom: 1px solid #61615f;
+  padding-bottom: 8px;
+}
+
+.footerNavigationListWrapper {
+  width: 45%;
+}
+
+.footerNavigationListItem {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(29, 29, 27);
+  margin-bottom: 20px;
+}
+
+.footerNavigationListItem a {
+  color: initial;
+}
+
+.footerBgContainer {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 20px;
+  padding-top: 16px;
+}
+@media (min-width: 768px) {
   .footerUnderlineWrapper {
     display: flex;
     flex-direction: row;
@@ -481,9 +617,64 @@ img.appLogo {
   img.appLogo {
     min-width: 114px;
   }
+
+  .footerLogoAndSocialWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footerLogo {
+    height: 52px;
+    width: 284px;
+    margin: 0;
+  }
+
+  .footerSocialWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .newsLetterBtn {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  ul.socialList {
+    margin-bottom: 0;
+  }
+
+  .footerLogoAndSocialWrapper {
+    margin-bottom: 30px;
+  }
+
+  .footerBorderContainer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footerNavigationListWrapper {
+    width: unset;
+  }
+
+  .footerNavigationWrapper {
+    justify-content: space-between;
+  }
+
+  .footerNavigationListTitle {
+    font-size: 24px;
+  }
 }
 
-@media (min-width: 1275px) {
+@media screen and (min-width: 1024px) {
+  .footerSocialWrapper {
+    gap: 15px;
+  }
+}
+
+@media screen and (min-width: 1275px) {
   .footerMobileAppUnderlineWrapper {
     max-width: 1275px;
     padding-left: 12px;
@@ -518,6 +709,11 @@ img.appLogo {
     max-width: 1275px;
     padding-left: 12px;
     padding-right: 12px;
+    margin: 0 auto;
+  }
+
+  .footerTopPartWrapper {
+    width: 1275px;
     margin: 0 auto;
   }
 }

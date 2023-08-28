@@ -39,6 +39,10 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <style>
       @font-face {
         font-family: "Isidora";
@@ -1427,87 +1431,269 @@
     <a class="adom-button">Lorem Ipsum</a>
     <!-- ==== FOOTER ==== -->
     <footer class="footer">
-      <div class="footerMobileAppUnderlineWrapper">
-        <div class="footerUnderlineWrapper">
-          <div class="mobileAppWrapper">
-            <h3 class="newsweekMobileAppTitle">Aplikacja mobilna Newsweek</h3>
-            <div class="mobileAppDescriptionWrapper firstLabelWrapper">
-              <svg
-                width="8"
-                height="14"
-                viewBox="0 0 8 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.5 1.10188L7.2407 7L0.499998 12.8981L0.5 1.10188Z"
-                  stroke="#A5A5A4"
-                ></path>
-              </svg>
-              <p class="mobileAppDescriptionLabel">
-                W aplikacji Newsweek dostęp do wszystkich treści z wydań
-                Newsweeka.
-              </p>
-            </div>
-            <div class="mobileAppDescriptionWrapper">
-              <svg
-                width="8"
-                height="14"
-                viewBox="0 0 8 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.5 1.10188L7.2407 7L0.499998 12.8981L0.5 1.10188Z"
-                  stroke="#A5A5A4"
-                ></path>
-              </svg>
-              <p class="mobileAppDescriptionLabel">
-                Dostęp do różnych treści: podcasty, wideo, opinie
-              </p>
+      <div class="footerBgWrapper">
+        <div class="footerTopPartWrapper">
+          <div class="footerLogoAndSocialWrapper">
+            <img
+              class="footerLogo"
+              src="./ostx_files/header-logo.webp"
+              alt="logo"
+            />
+            <div class="footerSocialWrapper">
+              <button class="newsLetterBtn" type="button">Newslettery</button>
+              <ul class="socialList">
+                <li class="socialListLink">
+                  <a href="#order_form">
+                    <svg
+                      class="socialListLinkIcon"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21 21C21 18.6362 20.5344 16.2956 19.6298 14.1117C18.7252 11.9278 17.3994 9.94353 15.7279 8.27208C14.0565 6.60062 12.0722 5.27475 9.8883 4.37017C7.70444 3.46558 5.36379 3 3 3"
+                        stroke="#1D1D1B"
+                      ></path>
+                      <path
+                        d="M14.6471 20.9996C14.6471 19.4701 14.3458 17.9555 13.7605 16.5425C13.1752 15.1294 12.3172 13.8454 11.2357 12.7639C10.1542 11.6824 8.87022 10.8244 7.45714 10.2391C6.04405 9.6538 4.52951 9.35254 3 9.35254"
+                        stroke="#1D1D1B"
+                      ></path>
+                      <circle
+                        cx="5.64706"
+                        cy="18.3531"
+                        r="2.64706"
+                        fill="#1D1D1B"
+                      ></circle>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socialListLink">
+                  <a href="#order_form"
+                    ><svg
+                      class="socialListLinkIcon"
+                      width="25"
+                      height="27"
+                      viewBox="0 0 25 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.0019 7.07592L17.8666 7.12601V3.60066L15.1027 3.5C13.8555 3.5 12.6593 4.01481 11.7774 4.93118C10.8955 5.84755 10.4 7.09041 10.4 8.38635V11.51H7.19995V15.2906H10.4V23.5H14.4242V15.2877H17.2849L17.8666 11.5072H14.4242V8.71478C14.4243 8.28008 14.5906 7.86323 14.8864 7.5559C15.1823 7.24857 15.5835 7.07592 16.0019 7.07592V7.07592Z"
+                        stroke="#1D1D1B"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="secondSocialListLink">
+                  <a href="#order_form"
+                    ><svg
+                      class="socialListLinkIcon"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.12096 20.2637C9.09198 20.2637 9.06316 20.2637 9.03434 20.2637C7.18017 20.2503 5.3586 19.776 3.73444 18.884C3.66819 18.8478 3.60691 18.8124 3.49511 18.748C3.42738 18.709 3.34092 18.6593 3.22433 18.5926L2.19995 18.0068L3.36461 17.8137C3.72268 17.7544 4.0478 17.7086 4.36231 17.665C4.99284 17.5762 5.53823 17.4999 6.04569 17.3512C6.58281 17.1945 7.1133 16.9527 7.73372 16.6741C6.47979 16.1141 5.38288 15.4505 5.01519 13.91L4.91085 13.4728L5.4574 13.3815C5.02281 13.0619 4.67898 12.7308 4.40637 12.371C3.87356 11.6696 3.61403 10.8642 3.61271 9.90892V9.42994L4.44943 9.53928C4.07744 8.95741 3.84276 8.37471 3.73726 7.77599C3.5766 6.86213 3.71606 5.91227 4.16324 4.87207L4.41432 4.28689L4.85454 4.74555C6.81832 6.79128 8.47256 7.87162 10.3863 8.35836C10.8255 8.47017 11.2815 8.55226 11.7641 8.63914L11.9882 8.68026L12.0362 8.64343C12.0616 8.31938 12.0834 8.03959 12.1209 7.75369C12.2168 7.03447 12.4936 6.3511 12.9253 5.76709C13.3382 5.20763 13.8772 4.75272 14.4987 4.43901C15.6816 3.84441 16.9905 3.85449 18.0897 4.4651C19.2814 5.12691 20.0726 5.33684 21.09 4.64794C21.1371 4.61595 21.1903 4.59384 21.2463 4.58296C21.3023 4.57207 21.3599 4.57264 21.4156 4.58462C21.4714 4.59661 21.5241 4.61976 21.5706 4.65268C21.6171 4.68559 21.6565 4.72758 21.6862 4.77611L21.8379 5.02385C21.8794 5.09133 21.9009 5.16912 21.8999 5.24825C21.899 5.32738 21.8757 5.40464 21.8326 5.47112L21.3192 6.26391L21.7258 6.21171C21.8243 6.19924 21.9238 6.22564 22.0031 6.28528C22.0824 6.34492 22.1352 6.43308 22.1503 6.53098L22.1563 6.57045C22.1586 6.58548 22.1647 6.61141 22.1702 6.63437C22.1811 6.67645 22.1896 6.71914 22.1955 6.76221C22.2265 7.00995 22.0879 7.14605 22.0269 7.19279C20.8849 8.06684 20.6746 9.31119 20.4308 10.7521L20.4065 10.8964C20.1032 12.7043 19.3517 14.4079 18.2202 15.8525C17.1536 17.2148 15.7507 18.3396 14.1625 19.1063C12.5881 19.8635 10.8467 20.2637 9.12096 20.2637ZM4.75401 18.458C7.58499 19.7679 10.9152 19.7383 13.7953 18.3492C16.9039 16.8496 19.0109 14.082 19.5755 10.7559L19.5999 10.6122C19.7296 9.845 19.8521 9.12026 20.1153 8.43202C20.299 7.95189 20.5385 7.53435 20.8396 7.17165L19.6267 7.32723L20.6143 5.80277C20.2672 5.90481 19.903 5.93604 19.5436 5.8946C18.8677 5.81879 18.2221 5.50068 17.6798 5.19942C16.8284 4.72656 15.8068 4.72292 14.8773 5.18968C13.8397 5.71061 13.1035 6.73496 12.9561 7.86303C12.9217 8.12729 12.9005 8.397 12.8761 8.70933C12.8634 8.87152 12.8503 9.03966 12.8339 9.22481L12.793 9.68958L12.3337 9.60006C12.0864 9.55183 11.8461 9.50856 11.6136 9.46661C11.1167 9.37692 10.6457 9.29219 10.1775 9.17311C9.05819 8.88837 8.00898 8.40592 6.9702 7.69819C6.23053 7.19428 5.50328 6.58416 4.71393 5.80277C4.25897 7.26629 4.57067 8.49396 5.70286 9.81048L6.41868 10.6427L4.48388 10.39C4.62929 11.5708 5.33485 12.4229 6.81402 13.2474L7.85975 13.8307L5.97382 14.1457C6.41901 15.2084 7.44437 15.6428 8.70526 16.1772L8.95369 16.2826L9.86345 16.6706L8.95253 17.0554C8.61598 17.1976 8.31257 17.3342 8.01908 17.4663C7.39601 17.7471 6.85807 17.9891 6.2822 18.1571C5.79494 18.2988 5.30354 18.3784 4.75401 18.458Z"
+                        fill="#1D1D1B"
+                        stroke="#1D1D1B"
+                        stroke-width="0.2"
+                        stroke-miterlimit="10"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="secondSocialListLink">
+                  <a href="#order_form"
+                    ><svg
+                      class="socialListLinkIcon"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.8504 8.1634C16.6499 8.1634 16.4539 8.10395 16.2872 7.99256C16.1205 7.88117 15.9906 7.72285 15.9138 7.53761C15.8371 7.35238 15.817 7.14855 15.8562 6.95191C15.8953 6.75527 15.9918 6.57464 16.1336 6.43287C16.2754 6.2911 16.456 6.19455 16.6527 6.15543C16.8493 6.11632 17.0531 6.13639 17.2384 6.21312C17.4236 6.28985 17.5819 6.41978 17.6933 6.58648C17.8047 6.75319 17.8642 6.94918 17.8642 7.14968C17.8642 7.2828 17.838 7.41462 17.787 7.53761C17.7361 7.6606 17.6614 7.77236 17.5673 7.86649C17.4731 7.96062 17.3614 8.03529 17.2384 8.08624C17.1154 8.13718 16.9836 8.1634 16.8504 8.1634ZM12.0001 4.39057C10.6781 4.39057 9.35603 4.40461 8.03397 4.43269C6.11159 4.47884 4.47874 6.11164 4.4326 8.03396C4.3763 10.6779 4.3763 13.3218 4.4326 15.9659C4.47874 17.8884 6.11159 19.5212 8.03397 19.5673C9.35603 19.5953 10.6781 19.6093 12.0001 19.6094C13.3222 19.6096 14.6442 19.5955 15.9661 19.5673C17.8885 19.521 19.5214 17.8882 19.5675 15.9659C19.6237 13.322 19.6237 10.678 19.5675 8.03396C19.5214 6.11164 17.8885 4.47884 15.9661 4.43269C14.6443 4.40448 13.3223 4.39044 12.0001 4.39057ZM12.0001 3C13.326 3 14.6703 3.01436 15.9958 3.04251H15.9996C17.2882 3.07353 18.5149 3.60758 19.4538 4.54663C20.3926 5.48567 20.9267 6.71213 20.9575 8.00064V8.00447C21.0138 10.6556 21.0138 13.3442 20.9575 15.9955V15.9994C20.9267 17.2877 20.3926 18.5145 19.4538 19.4534C18.5149 20.3922 17.2882 20.9265 15.9996 20.9573H15.9958C14.6701 20.9856 13.3256 20.9996 12.0001 20.9996C10.6746 20.9996 9.33018 20.9853 8.00448 20.9571H8.00065C6.71211 20.9263 5.48541 20.3922 4.54634 19.4532C3.60727 18.5141 3.07339 17.2879 3.04237 15.9994V15.9955C2.98588 13.3442 2.98588 10.6558 3.04237 8.00447V8.00064C3.07339 6.71213 3.60746 5.48548 4.54653 4.54644C5.48561 3.60739 6.71211 3.07353 8.00065 3.04251H8.00448C9.32999 3.01436 10.6743 3 12.0001 3ZM12.0001 8.76926C10.2264 8.76926 8.78845 10.2155 8.78845 12C8.78845 13.7845 10.2264 15.2307 12.0001 15.2307C13.7739 15.2307 15.2116 13.7843 15.2116 11.9998C15.2116 10.2154 13.7737 8.76926 12.0001 8.76926ZM12.0001 7.37869C14.5378 7.37869 16.6023 9.45171 16.6023 12C16.6023 14.5483 14.5378 16.6213 12.0001 16.6213C9.4625 16.6213 7.39784 14.5483 7.39784 11.9998C7.39784 9.45133 9.4625 7.37869 12.0001 7.37869Z"
+                        fill="#1D1D1B"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="logosWrapper">
-            <a href="#order_form"
-              ><img
-                class="appLogo"
-                src="./ostx_files/header/googleplayLogo.webp"
-                alt="GoogleApps logo"
-            /></a>
-            <a href="#order_form"
-              ><img
-                class="appLogo"
-                src="./ostx_files/header/appstoreLogo.webp"
-                alt="appstoreLogo"
-            /></a>
+          <div class="footerBorderContainer">
+            <div class="footerBorderLine">
+              <div class="footerBorderTriangle"></div>
+            </div>
+          </div>
+          <div class="footerNavigationWrapper">
+            <div class="footerNavigationListWrapper">
+              <p class="footerNavigationListTitle">Polska</p>
+              <ul>
+                <li class="footerNavigationListItem">
+                  <a href="#order_form">PiS</a>
+                </li>
+                <li class="footerNavigationListItem">
+                  <a href="#order_form">PO</a>
+                </li>
+                <li class="footerNavigationListItem">
+                  <a href="#order_form">Jarosław Kaczyński</a>
+                </li>
+                <li class="footerNavigationListItem">
+                  <a href="#order_form">Zbigniew Ziobro</a>
+                </li>
+                <li class="footerNavigationListItem">
+                  <a href="#order_form">Andrzej Duda</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footerNavigationListWrapper">
+              <p class="footerNavigationListTitle">Świat</p>
+              <ul>
+                <li class="footerNavigationListItem"><a href="">Rosja</a></li>
+                <li class="footerNavigationListItem"><a href="">USA</a></li>
+                <li class="footerNavigationListItem"><a href="">Ukraina</a></li>
+                <li class="footerNavigationListItem">
+                  <a href="">Wojna w Ukrainie</a>
+                </li>
+                <li class="footerNavigationListItem"><a href="">Węgry</a></li>
+              </ul>
+            </div>
+            <div class="footerNavigationListWrapper">
+              <p class="footerNavigationListTitle">Pieniądze</p>
+              <ul>
+                <li class="footerNavigationListItem">
+                  <a href="">Facebook</a>
+                </li>
+                <li class="footerNavigationListItem">
+                  <a href="">500 plus</a>
+                </li>
+                <li class="footerNavigationListItem">
+                  <a href="">Emerytury</a>
+                </li>
+                <li class="footerNavigationListItem">
+                  <a href="">Inflacja</a>
+                </li>
+                <li class="footerNavigationListItem"><a href="">Orlen</a></li>
+              </ul>
+            </div>
+            <div class="footerNavigationListWrapper">
+              <p class="footerNavigationListTitle">Nauka</p>
+              <ul>
+                <li class="footerNavigationListItem">
+                  <a href="">Koronawirus</a>
+                </li>
+                <li class="footerNavigationListItem">
+                  <a href="">Kleszcze</a>
+                </li>
+                <li class="footerNavigationListItem"><a href="">Upały</a></li>
+                <li class="footerNavigationListItem"><a href="">Rak</a></li>
+                <li class="footerNavigationListItem"><a href="">Seks</a></li>
+              </ul>
+            </div>
+            <div class="footerNavigationListWrapper">
+              <p class="footerNavigationListTitle">Kultura</p>
+              <ul>
+                <li class="footerNavigationListItem"><a href="">Muzyka</a></li>
+                <li class="footerNavigationListItem"><a href="">Książki</a></li>
+                <li class="footerNavigationListItem"><a href="">Kino</a></li>
+                <li class="footerNavigationListItem"><a href="">Teatr</a></li>
+                <li class="footerNavigationListItem">
+                  <a href="">Filmy i seriale</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <ul class="footerList">
-        <li class="footerListItem">
-          <a href="#order_form">Subskrypcja Newsweek.pl</a>
-        </li>
-        <li class="footerListItem">
-          <a href="#order_form">Prenumerata wydań</a>
-        </li>
-        <li class="footerListItem"><a href="#order_form">Regulamin</a></li>
-        <li class="footerListItem">
-          <a href="#order_form">Polityka prywatności</a>
-        </li>
-        <li class="footerListItem"><a href="#order_form">Mapa strony</a></li>
-        <li class="footerListItem">
-          <a href="#order_form">Reklama w Newsweek</a>
-        </li>
-        <li class="footerListItem"><a href="#order_form">Pomoc</a></li>
-        <li class="footerListItem"><a href="#order_form">Kontakt</a></li>
-        <li class="footerListItem">
-          <a href="#order_form">Kupony rabatowe</a>
-        </li>
-      </ul>
-      <div class="footerCopyrightWrapper">
-        <p class="footerCopyright">
-          © 2023 Ringier Axel Springer Polska. Wszelkie prawa zastrzeżone
-        </p>
+      <div class="footerBgContainer">
+        <div class="footerMobileAppUnderlineWrapper">
+          <div class="footerUnderlineWrapper">
+            <div class="mobileAppWrapper">
+              <h3 class="newsweekMobileAppTitle">Aplikacja mobilna Newsweek</h3>
+              <div class="mobileAppDescriptionWrapper firstLabelWrapper">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.5 1.10188L7.2407 7L0.499998 12.8981L0.5 1.10188Z"
+                    stroke="#A5A5A4"
+                  ></path>
+                </svg>
+                <p class="mobileAppDescriptionLabel">
+                  W aplikacji Newsweek dostęp do wszystkich treści z wydań
+                  Newsweeka.
+                </p>
+              </div>
+              <div class="mobileAppDescriptionWrapper">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.5 1.10188L7.2407 7L0.499998 12.8981L0.5 1.10188Z"
+                    stroke="#A5A5A4"
+                  ></path>
+                </svg>
+                <p class="mobileAppDescriptionLabel">
+                  Dostęp do różnych treści: podcasty, wideo, opinie
+                </p>
+              </div>
+            </div>
+            <div class="logosWrapper">
+              <a href="#order_form"
+                ><img
+                  class="appLogo"
+                  src="./ostx_files/header/googleplayLogo.webp"
+                  alt="GoogleApps logo"
+              /></a>
+              <a href="#order_form"
+                ><img
+                  class="appLogo"
+                  src="./ostx_files/header/appstoreLogo.webp"
+                  alt="appstoreLogo"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <ul class="footerList">
+          <li class="footerListItem">
+            <a href="#order_form">Subskrypcja Newsweek.pl</a>
+          </li>
+          <li class="footerListItem">
+            <a href="#order_form">Prenumerata wydań</a>
+          </li>
+          <li class="footerListItem"><a href="#order_form">Regulamin</a></li>
+          <li class="footerListItem">
+            <a href="#order_form">Polityka prywatności</a>
+          </li>
+          <li class="footerListItem"><a href="#order_form">Mapa strony</a></li>
+          <li class="footerListItem">
+            <a href="#order_form">Reklama w Newsweek</a>
+          </li>
+          <li class="footerListItem"><a href="#order_form">Pomoc</a></li>
+          <li class="footerListItem"><a href="#order_form">Kontakt</a></li>
+          <li class="footerListItem">
+            <a href="#order_form">Kupony rabatowe</a>
+          </li>
+        </ul>
+        <div class="footerCopyrightWrapper">
+          <p class="footerCopyright">
+            © 2023 Ringier Axel Springer Polska. Wszelkie prawa zastrzeżone
+          </p>
+        </div>
       </div>
     </footer>
     <!-- ==== FOOTER END ==== -->
