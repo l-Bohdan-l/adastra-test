@@ -10,6 +10,7 @@ const toggleClass = "is-sticky";
 const menuIconWrapper = document.querySelector(".menuIconWrapper");
 const navHideClass = "headerElHidden";
 const headerNavList = document.querySelector(".headerNavList");
+const footerBtn = document.querySelector(".newsLetterBtn");
 
 let options = {
   weekday: "long",
@@ -61,4 +62,8 @@ window.addEventListener("scroll", () => {
 
 menuIconWrapper.addEventListener("click", () => {
   headerNavList.classList.toggle(navHideClass);
+});
+
+footerBtn.addEventListener("click", () => {
+  orderForm.scrollIntoView({ behavior: "smooth" });
 });
