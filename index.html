@@ -181,25 +181,101 @@
     <div id="fbody" class="fbody Home" data-config="third-menu">
       <!-- ==== HEADER ==== -->
       <header class="header">
-        <img class="logo" src="./ostx_files/header-logo.webp" alt="logo" />
-        <p class="navigationDate">
-          Piątek, <span class="navigationDateNumber">25</span> SIERPNIA
-        </p>
-        <div>
-          <p>Авторизуватись</p>
-          <button type="button">Купити підписку</button>
+        <div class="logoAndBtnWrapper">
+          <div class="fixedHeaderLogoWrapper">
+            <button class="menuIconWrapper" type="button">
+              <img
+                class="menuIcon"
+                src="./ostx_files/header/burgerIcon.svg"
+                alt="menu icon"
+              />
+            </button>
+            <img class="logo" src="./ostx_files/header-logo.webp" alt="logo" />
+            <p class="navigationDate">
+              <span id="headerWeekDay">Piątek</span>,
+              <span id="headerDate" class="navigationDateNumber">25</span>
+              <span id="headerMonth">SIERPNIA</span>
+            </p>
+          </div>
+          <div class="headerButtonsWrapper">
+            <button id="loginButton" class="loginButton" type="button">
+              <span class="loginButtonText"> Zaloguj się </span>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12" cy="12" r="9.5" stroke="#1D1D1B"></circle>
+                <path
+                  d="M14.8335 8.66651C14.8335 10.2313 13.565 11.4998 12.0001 11.4998C10.4353 11.4998 9.16681 10.2313 9.16681 8.66651C9.16681 7.1017 10.4353 5.83318 12.0001 5.83318C13.565 5.83318 14.8335 7.1017 14.8335 8.66651Z"
+                  stroke="#1D1D1B"
+                ></path>
+                <path
+                  d="M18.6665 18.6668C17.8314 15.7789 15.1628 13.6668 11.9999 13.6668C8.8369 13.6668 6.16831 15.7789 5.33319 18.6668"
+                  stroke="#1D1D1B"
+                ></path>
+              </svg>
+            </button>
+            <button
+              id="buySubscriptionBtn"
+              class="buySubscriptionBtn"
+              type="button"
+            >
+              Kup subskrypcję
+            </button>
+          </div>
         </div>
-        <ul>
-          <li>Останній випуск</li>
-          <li>Польща</li>
-          <li>Бізнес</li>
-          <li>світ</li>
-          <li>Здоров'я і наука</li>
-          <li>культури</li>
-          <li>психологія</li>
-          <li>Думки</li>
-          <li>більше</li>
-        </ul>
+        <div class="navListAndSearchWrapper">
+          <nav class="headerNavList">
+            <li class="headerNavListItem headerNavListItemFirstLink">
+              <a href="#order_form" class="headerNavListItemLink">
+                Najnowsze wydanie
+              </a>
+            </li>
+            <li class="headerNavListItem">
+              <a href="#order_form" class="headerNavListItemLink"> Polska </a>
+            </li>
+            <li class="headerNavListItem">
+              <a href="#order_form" class="headerNavListItemLink"> Biznes </a>
+            </li>
+            <li class="headerNavListItem">
+              <a href="#order_form" class="headerNavListItemLink"> Świat </a>
+            </li>
+            <li class="headerNavListItem">
+              <a href="#order_form" class="headerNavListItemLink">
+                Zdrowie i nauka
+              </a>
+            </li>
+            <li class="headerNavListItem">
+              <a href="#order_form" class="headerNavListItemLink"> Kultura </a>
+            </li>
+            <li class="headerNavListItem">
+              <a href="#order_form" class="headerNavListItemLink">
+                Psychologia
+              </a>
+            </li>
+            <li class="headerNavListItem">
+              <a href="#order_form" class="headerNavListItemLink"> Opinie </a>
+            </li>
+            <li class="headerNavListItem">
+              <a href="#order_form" class="headerNavListItemLink"> Więcej </a>
+            </li>
+          </nav>
+          <div id="searchIcon" class="searchIcon">
+            <svg
+              width="17"
+              height="19"
+              viewBox="0 0 17 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="7" cy="7" r="6.5" stroke="#1D1D1B"></circle>
+              <path d="M11 12L16 18" stroke="#1D1D1B"></path>
+            </svg>
+          </div>
+        </div>
       </header>
       <!-- ==== FIN HEADER ==== -->
       <main data-index="0">
@@ -1392,13 +1468,13 @@
             </div>
           </div>
           <div class="logosWrapper">
-            <a href="#"
+            <a href="#order_form"
               ><img
                 class="appLogo"
                 src="./ostx_files/header/googleplayLogo.webp"
                 alt="GoogleApps logo"
             /></a>
-            <a href="#"
+            <a href="#order_form"
               ><img
                 class="appLogo"
                 src="./ostx_files/header/appstoreLogo.webp"
@@ -1408,17 +1484,25 @@
         </div>
       </div>
       <ul class="footerList">
-        <li class="footerListItem"><a href="#">Subskrypcja Newsweek.pl</a></li>
-        <li class="footerListItem"><a href="#">Prenumerata wydań</a></li>
-        <li class="footerListItem"><a href="#">Regulamin</a></li>
         <li class="footerListItem">
-          <a href="#">Polityka prywatności</a>
+          <a href="#order_form">Subskrypcja Newsweek.pl</a>
         </li>
-        <li class="footerListItem"><a href="#">Mapa strony</a></li>
-        <li class="footerListItem"><a href="#">Reklama w Newsweek</a></li>
-        <li class="footerListItem"><a href="#">Pomoc</a></li>
-        <li class="footerListItem"><a href="#">Kontakt</a></li>
-        <li class="footerListItem"><a href="#">Kupony rabatowe</a></li>
+        <li class="footerListItem">
+          <a href="#order_form">Prenumerata wydań</a>
+        </li>
+        <li class="footerListItem"><a href="#order_form">Regulamin</a></li>
+        <li class="footerListItem">
+          <a href="#order_form">Polityka prywatności</a>
+        </li>
+        <li class="footerListItem"><a href="#order_form">Mapa strony</a></li>
+        <li class="footerListItem">
+          <a href="#order_form">Reklama w Newsweek</a>
+        </li>
+        <li class="footerListItem"><a href="#order_form">Pomoc</a></li>
+        <li class="footerListItem"><a href="#order_form">Kontakt</a></li>
+        <li class="footerListItem">
+          <a href="#order_form">Kupony rabatowe</a>
+        </li>
       </ul>
       <div class="footerCopyrightWrapper">
         <p class="footerCopyright">
@@ -1495,5 +1579,6 @@
         });
       });
     </script>
+    <script src="./ostx_files/header/header-footer.js"></script>
   </body>
 </html>
